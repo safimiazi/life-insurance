@@ -1,9 +1,10 @@
+import { NavbarWithMegaMenu } from "../Components/Home/Header";
 
 
 const Home = () => {
     return (
         <div>
-            <h1>hello</h1>
+           <NavbarWithMegaMenu/>
         </div>
     );
 };
