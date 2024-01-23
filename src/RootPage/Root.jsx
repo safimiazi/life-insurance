@@ -1,9 +1,13 @@
-import Home from '../Pages/Home';
+import { Outlet } from 'react-router-dom';
+import { Nav } from '../Shared/Navbar';
+
 
 const Root = () => {
     return (
         <div>
-            <Home/>
+           <Nav/>
+           <Outlet/>
+           
         </div>
     );
 };

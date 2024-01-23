@@ -1,10 +1,10 @@
-import { NavbarWithMegaMenu } from "../Components/Home/Header";
+import { Carousel2 } from "../Components/Home/Banner";
 
 
 const Home = () => {
     return (
         <div>
-           <NavbarWithMegaMenu/>
+          <Carousel2/>
         </div>
     );
 };
