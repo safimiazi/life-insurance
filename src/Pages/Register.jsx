@@ -11,7 +11,7 @@ import {
 
 function Register() {
     return (
-        <div className="grid md:grid-cols-2 grid-cols-1">
+        <div className="grid md:grid-cols-2 grid-cols-1 mt-10">
             <div>
                 <Card className="w-96">
                     <CardHeader
