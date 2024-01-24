@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import logo from "../assets/logo (1).png"
 const Navbar = () => {
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -77,7 +77,7 @@ const Navbar = () => {
 
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <img src={logo} alt="" />
       </div>
       <div className="navbar-center hidden  lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -147,8 +147,8 @@ const Navbar = () => {
 
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end ml-3">
+        <a className="btn rounded-full bg-amber-400">Buy Now</a>
       </div>
     </div>
 
