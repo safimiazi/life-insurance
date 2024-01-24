@@ -19,6 +19,7 @@ const Navbar = () => {
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             <li><a>Home</a></li>
+
             <li>
               <a>Company Info</a>
               <ul className="p-2">
@@ -28,7 +29,52 @@ const Navbar = () => {
                 <li><a>CEO Profile</a></li>
               </ul>
             </li>
-            <li><a>Item 3</a></li>
+
+            <li>
+              <a>Products</a>
+              <ul className="p-2">
+                <li><a>Individual (Akok Bima)</a></li>
+                <li><a>Islami Takaful</a></li>
+                <li><a>Janabima</a></li>
+                <li><a>NPDI</a></li>
+                <li><a>Group Insurance</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a>Financial</a>
+              <ul className="p-2">
+                <li><a>Quarterly Financial Statement</a></li>
+                <li><a>Annual Report</a></li>
+                <li><a>Investment</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a>E-Service</a>
+              <ul className="p-2">
+                <li><a>Premium Calculator</a></li>
+                <li><a>Online Payment</a></li>
+                <li><a>Claim Status</a></li>
+                <li><a>Apply For Policy</a></li>
+              </ul>
+            </li>
+            <li><a>Home</a></li>
+
+            <li>
+              <a>Customer Care</a>
+              <ul className="p-2">
+                <li><a>Life Insurance</a></li>
+                <li><a>Service Center</a></li>
+                <li><a>Area Office</a></li>
+                <li><a>Zonal Office</a></li>
+                <li><a>Discount Facility</a></li>
+                <li><a>DownLoad</a></li>
+              </ul>
+            </li>
+
+            <li><a>Contact Us</a></li>
+
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">daisyUI</a>
@@ -40,14 +86,65 @@ const Navbar = () => {
             <details>
               <summary>Company Info</summary>
               <ul className="p-2 z-10 w-56">
-              <li><a>About Us</a></li>
+                <li><a>About Us</a></li>
                 <li><a>Board Of Directors</a></li>
                 <li><a>Executives</a></li>
                 <li><a>CEO Profile</a></li>
               </ul>
             </details>
           </li>
-          <li><a>Item 3</a></li>
+          <li>
+            <details>
+              <summary>Products</summary>
+              <ul className="p-2 z-10 w-56">
+                <li><a>Individual (Akok Bima)</a></li>
+                <li><a>Islami Takaful</a></li>
+                <li><a>Janabima</a></li>
+                <li><a>NPDI</a></li>
+                <li><a>Group Insurance</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Financial</summary>
+              <ul className="p-2 z-10 w-56">
+              <li><a>Quarterly Financial Statement</a></li>
+                <li><a>Annual Report</a></li>
+                <li><a>Investment</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>E-Service</summary>
+              <ul className="p-2 z-10 w-56">
+              <li><a>Premium Calculator</a></li>
+                <li><a>Online Payment</a></li>
+                <li><a>Claim Status</a></li>
+                <li><a>Apply For Policy</a></li>
+              </ul>
+            </details>
+          </li>
+         
+          <li><a>Media</a></li>
+
+          <li>
+            <details>
+              <summary>Customer Care</summary>
+              <ul className="p-2 z-10 w-56">
+              <li><a>Life Insurance</a></li>
+                <li><a>Service Center</a></li>
+                <li><a>Area Office</a></li>
+                <li><a>Zonal Office</a></li>
+                <li><a>Discount Facility</a></li>
+                <li><a>DownLoad</a></li>
+              </ul>
+            </details>
+          </li>
+
+          <li><a>Contact Us</a></li>
+
         </ul>
       </div>
       <div className="navbar-end">
