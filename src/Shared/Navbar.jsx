@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logo (1).png"
+
 const Navbar = () => {
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -77,7 +77,7 @@ const Navbar = () => {
 
           </ul>
         </div>
-        <img src={logo} alt="" />
+        <a className="btn btn-ghost text-md md:text-2xl">Insurance Company</a>
       </div>
       <div className="navbar-center hidden  lg:flex">
         <ul className="menu menu-horizontal px-1">
