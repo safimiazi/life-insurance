@@ -22,8 +22,10 @@ const Navbar = () => {
             <li>
               <a>Company Info</a>
               <ul className="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Board Of Directors</a></li>
+                <li><a>Executives</a></li>
+                <li><a>CEO Profile</a></li>
               </ul>
             </li>
             <li><a>Item 3</a></li>
@@ -31,15 +33,17 @@ const Navbar = () => {
         </div>
         <a className="btn btn-ghost text-xl">daisyUI</a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden  lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a>Item 1</a></li>
+          <li><a>Home</a></li>
           <li>
             <details>
-              <summary>Parent</summary>
-              <ul className="p-2 z-10">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
+              <summary>Company Info</summary>
+              <ul className="p-2 z-10 w-56">
+              <li><a>About Us</a></li>
+                <li><a>Board Of Directors</a></li>
+                <li><a>Executives</a></li>
+                <li><a>CEO Profile</a></li>
               </ul>
             </details>
           </li>
