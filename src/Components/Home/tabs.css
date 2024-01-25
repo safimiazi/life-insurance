@@ -1,0 +1,34 @@
+.react-tabs__tab-list {
+    display: flex;
+    background-color: gainsboro;
+    border-radius: 40px 40px 40px 40px;
+    font-weight: bold;
+    font-size:  20px;
+    
+}
+
+.react-tabs__tab {
+    position: relative;
+    padding: 20px 70px 20px 70px;
+    border-radius: 40px 40px 40px 40px;
+    overflow: hidden;
+    color: white;
+}
+
+.react-tabs__tab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent 0%, #3841A2 100%);
+    transition: left 1s ease-in-out;
+    color: white;
+}
+
+.react-tabs__tab:focus::before {
+    left: 0;
+}
+
+
