@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -148,7 +149,9 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end ml-3">
+        <Link to={"/register"}>
         <a className="btn rounded-full bg-amber-400">Buy Now</a>
+        </Link>
       </div>
     </div>
 
