@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -82,7 +82,9 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden  lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
+         <NavLink to={"/"}>
+         <li><a>Home</a></li>
+         </NavLink>
           <li>
             <details>
               <summary>Company Info</summary>
