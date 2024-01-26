@@ -4,15 +4,16 @@ const Sidebar = () => {
   const [data, setData] = useState();
 
   useEffect(() => {
-    fetch("/public/latestNews.json")
+    fetch("latestNews.json")
       .then(res => res.json())
       .then(data => setData(data))
       .catch(err => console.error(err.message));
   }, []);
 
   return (
-    <div>
-      <div className="border-2">
+   <div className="bg-gray-100 p-10">
+     <div>
+      <div className="">
         <div className="p-2 bg-violet-900 text-white text-2xl text-center">Latest News</div>
       </div>
       <div>
@@ -26,6 +27,7 @@ const Sidebar = () => {
         ))}
       </div>
     </div>
+   </div>
   );
 };
 
