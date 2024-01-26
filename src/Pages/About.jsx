@@ -1,5 +1,7 @@
 import about from "../assets/about.jpg"
+import Sidebar from "../Shared/Sidebar";
 const About = () => {
+  
     return (
         <div className="grid md:grid-cols-3 grid-cols-1 md:p-5 min-h-screen gap-5">
             <div className="border-2 col-span-2 ">
@@ -17,18 +19,18 @@ const About = () => {
                 </div>
                 <div className="mt-5">
                     <pre>
-                        <span className="text-xl font-bold">Our Visions→</span><br/>
+                        <span className="text-xl font-bold">Our Visions→</span><br />
 
-                        ►  To encourage and induce saving practice;<br/>
+                        ►  To encourage and induce saving practice;<br />
 
-                        ►  To create and provide employment opportunity; &<br/>
+                        ►  To create and provide employment opportunity; &<br />
 
                         ►  Capital formation at national level for investment.
                     </pre>
                 </div>
                 <div className="mt-5">
                     <pre>
-                        <span className="text-xl font-bold">Our Slogan→</span><br/>
+                        <span className="text-xl font-bold">Our Slogan→</span><br />
 
                         ► The slogan of the company is “Ghore Ghore NLI Jone Jone NLI”
                     </pre>
@@ -40,9 +42,8 @@ const About = () => {
                 </div>
             </div>
             <div className="border-2 p-10">
-                <div className="border-2">
-                    <div className="p-2 bg-violet-900 text-white text-2xl text-center">Latest News</div>
-                </div>
+               <Sidebar/>
+               
             </div>
         </div>
     );
