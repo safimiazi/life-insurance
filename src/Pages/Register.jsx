@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../Components/AuthProvider/AuthProvider";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
     const  {createUser}  = useContext(AuthContext)
@@ -55,7 +55,11 @@ const navigate = useNavigate()
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button type="submit" className="btn btn-primary">Login</button>
+                            <button type="submit" className="btn btn-primary">Register</button>
+                        </div>
+                        <div>
+                        <p>Already register, please <Link to={"/login"}><span>Login</span></Link></p>
+
                         </div>
                     </form>
                 </div>
