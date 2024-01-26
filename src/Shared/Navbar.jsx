@@ -19,12 +19,16 @@ const Navbar = () => {
             </svg>
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Home</a></li>
+            <NavLink to={"/"}>
+              <li><a>Home</a></li>
+            </NavLink>
 
             <li>
               <a>Company Info</a>
               <ul className="p-2">
-                <li><a>About Us</a></li>
+                <NavLink to={"/about"}>
+                  <li><a>About Us</a></li>
+                </NavLink>
                 <li><a>Board Of Directors</a></li>
                 <li><a>Executives</a></li>
                 <li><a>CEO Profile</a></li>
@@ -82,14 +86,16 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden  lg:flex">
         <ul className="menu menu-horizontal px-1">
-         <NavLink to={"/"}>
-         <li><a>Home</a></li>
-         </NavLink>
+          <NavLink to={"/"}>
+            <li><a>Home</a></li>
+          </NavLink>
           <li>
             <details>
               <summary>Company Info</summary>
               <ul className="p-2 z-10 w-56">
-                <li><a>About Us</a></li>
+                <NavLink to={"/about"}>
+                  <li><a>About Us</a></li>
+                </NavLink>
                 <li><a>Board Of Directors</a></li>
                 <li><a>Executives</a></li>
                 <li><a>CEO Profile</a></li>
@@ -112,7 +118,7 @@ const Navbar = () => {
             <details>
               <summary>Financial</summary>
               <ul className="p-2 z-10 w-56">
-              <li><a>Quarterly Financial Statement</a></li>
+                <li><a>Quarterly Financial Statement</a></li>
                 <li><a>Annual Report</a></li>
                 <li><a>Investment</a></li>
               </ul>
@@ -122,21 +128,21 @@ const Navbar = () => {
             <details>
               <summary>E-Service</summary>
               <ul className="p-2 z-10 w-56">
-              <li><a>Premium Calculator</a></li>
+                <li><a>Premium Calculator</a></li>
                 <li><a>Online Payment</a></li>
                 <li><a>Claim Status</a></li>
                 <li><a>Apply For Policy</a></li>
               </ul>
             </details>
           </li>
-         
+
           <li><a>Media</a></li>
 
           <li>
             <details>
               <summary>Customer Care</summary>
               <ul className="p-2 z-10 w-56">
-              <li><a>Life Insurance</a></li>
+                <li><a>Life Insurance</a></li>
                 <li><a>Service Center</a></li>
                 <li><a>Area Office</a></li>
                 <li><a>Zonal Office</a></li>
@@ -152,7 +158,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end ml-3">
         <Link to={"/register"}>
-        <a className="btn rounded-full bg-amber-400">Buy Now</a>
+          <a className="btn rounded-full bg-amber-400">Buy Now</a>
         </Link>
       </div>
     </div>

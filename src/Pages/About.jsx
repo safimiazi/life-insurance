@@ -2,10 +2,10 @@
 const About = () => {
     return (
         <div className="grid md:grid-cols-2 grid-cols-1">
-            <div>
+            <div className="border-2">
 
             </div>
-            <div>
+            <div className="border-2">
 
             </div>
         </div>
