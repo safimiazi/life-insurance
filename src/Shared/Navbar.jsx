@@ -19,14 +19,14 @@ const Navbar = () => {
             </svg>
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <NavLink to={"/"}>
+            <NavLink to="/">
               <li><a>Home</a></li>
             </NavLink>
 
             <li>
               <a>Company Info</a>
               <ul className="p-2">
-                <NavLink to={"/about"}>
+                <NavLink to="/about">
                   <li><a>About Us</a></li>
                 </NavLink>
                 <li><a>Board Of Directors</a></li>
@@ -64,36 +64,27 @@ const Navbar = () => {
                 <li><a>Apply For Policy</a></li>
               </ul>
             </li>
-            <li><a>Home</a></li>
 
-            <li>
-              <a>Customer Care</a>
-              <ul className="p-2">
-                <li><a>Life Insurance</a></li>
-                <li><a>Service Center</a></li>
-                <li><a>Area Office</a></li>
-                <li><a>Zonal Office</a></li>
-                <li><a>Discount Facility</a></li>
-                <li><a>DownLoad</a></li>
-              </ul>
-            </li>
-
-            <li><a>Contact Us</a></li>
+            <NavLink to="/contact">
+              <li><a>Contact Us</a></li>
+            </NavLink>
 
           </ul>
+
         </div>
         <a className="btn btn-ghost text-md md:text-2xl">Insurance Company</a>
       </div>
       <div className="navbar-center hidden  lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <NavLink to={"/"}>
+          <NavLink to="/">
             <li><a>Home</a></li>
           </NavLink>
+
           <li>
             <details>
               <summary>Company Info</summary>
               <ul className="p-2 z-10 w-56">
-                <NavLink to={"/about"}>
+                <NavLink to="/about">
                   <li><a>About Us</a></li>
                 </NavLink>
                 <li><a>Board Of Directors</a></li>
@@ -102,6 +93,7 @@ const Navbar = () => {
               </ul>
             </details>
           </li>
+
           <li>
             <details>
               <summary>Products</summary>
@@ -114,6 +106,7 @@ const Navbar = () => {
               </ul>
             </details>
           </li>
+
           <li>
             <details>
               <summary>Financial</summary>
@@ -124,6 +117,7 @@ const Navbar = () => {
               </ul>
             </details>
           </li>
+
           <li>
             <details>
               <summary>E-Service</summary>
@@ -153,7 +147,6 @@ const Navbar = () => {
           </li>
 
           <li><a>Contact Us</a></li>
-
         </ul>
       </div>
       <div className="navbar-end ml-3">

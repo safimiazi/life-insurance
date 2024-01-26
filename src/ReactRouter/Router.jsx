@@ -3,6 +3,7 @@ import Root from "../RootRouter/Root";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import About from "../Pages/About";
 
 const router = createBrowserRouter([
     {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
         },
         {
             path: "/about",
-            element: <Register/>
+            element: <About/>
         },
         
       ]
